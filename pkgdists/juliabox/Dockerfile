@@ -6,6 +6,8 @@ FROM julialang/juliaboxminpkgdist:latest
 
 MAINTAINER Tanmay Mohapatra
 
+RUN apt-get update
+
 # Sundials
 RUN apt-get install -y \
     libsundials-cvode1 \
